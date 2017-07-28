@@ -1,20 +1,8 @@
 <context>
   <input pattern="(hola|buenas) *">
-    <output value="Hola!"/>
+    <output value="Hola! soy un bot creado por Jauver"/>
+  </input>
+  <input pattern="$Number">
+	<output value="$Number is too small..."/>
   </input>
 </context>
-
-<!-- <context>
-  <input pattern="(hola|buenas) *">
-    <output value="Hola $UserName! soy un bot creado por Jauver" if="full($UserName)"/>
-
-    <context if="empty($UserName)">
-      <output value="Hola! Cual es tu nombre?"/>
-
-      <input pattern="$Text">
-        <var name="UserName" value="$Text" scope="user"/>
-        <output value="Es un gusto en conocerte $UserName!"/>
-      
-      </input>
-  </input>
-</context> -->
