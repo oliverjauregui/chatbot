@@ -1,5 +1,11 @@
 <context>
   <input pattern="(hola|buenas) *">
+    <output value="Hola!"/>
+  </input>
+</context>
+
+<!-- <context>
+  <input pattern="(hola|buenas) *">
     <output value="Hola $UserName! soy un bot creado por Jauver" if="full($UserName)"/>
 
     <context if="empty($UserName)">
@@ -11,4 +17,4 @@
       
       </input>
   </input>
-</context>
+</context> -->
